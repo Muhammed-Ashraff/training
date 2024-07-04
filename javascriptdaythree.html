@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>Firstname</label>
+            <input type="text" value="Ashraff" id="firstName">
+        </p>
+        <p>
+            <label>Lastname</label>
+            <input type="text" id="lastName">
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" id="email">
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" id="password">
+        </p>
+        <p>
+            <label>Confirm password</label>
+            <input type="password" id="confirm_password">
+        </p>
+        <button type="button" onclick="submitForm()">Submit</button>
+
+
+    </form>
+
+    <!-- <form action="">
+        <p>
+            <input type="number" name="money" id="usdMoney">
+        </p>
+        <button type="button" onclick="submitForm()">Convert to Naira</button>
+    </form> -->
+    
+
+
+
+
+    <script type="text/javascript">
+        function submitForm(){
+            var firstname = document.getElementById('firstName').value;
+            var lastname = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if( firstname == "" || lastname == "" || email == "" || password == "" || confirm_password == ""){
+                alert('please complete the fields');
+            }else if(password != confirm_password){
+                alert('password do not match');
+            }else if(){
+
+            }else if(){
+                
+            }
+
+
+            
+            // alert(firstname);
+
+            // var naira = 536;
+            // var dollar = document.getElementById('usdMoney').value;
+            // var total = naira * dollar;
+            // alert(total);
+
+        }
+        
+        
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1>Enter your password</h1>
+    <form action="">
+        <input type="password" name="password" id="pswd">
+        <button type="button" id="btn" onclick="passwordCase()">Show password</button>
+    </form> -->
+
+    <form action="">
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <button type="button" onclick="Add()">Add</button>
+        <button type="button" onclick="subtract()">Subtract</button>
+        <button type="button" onclick="divide()">Divide</button>
+    </form>
+
+
+
+
+    <script type="text/javascript">
+        function Add()
+        { //var passwordField = document.getElementById('pswd');
+          //var button = document.getElementById('btn');
+          //if(passwordField.type == 'password')
+          //{
+            //passwordField.type = "text";
+           // button.innerHTML = 'Hide password'
+         // }else{
+           // passwordField.type = "password";
+           // button.innerHTML = 'Show password'
+         // }
+         var number1 = document.getElementById('number1').value;
+         var number2 = document.getElementById('number2').value;
+         var total = parseInt(number1) + parseInt(number2);
+
+         alert(total);
+
+        }
+
+        function subtract()
+        {
+            var number1 = document.getElementById('number1').value;
+            var number2 = document.getElementById('number2').value;
+            var total = parseInt(number1) - parseInt(number2);
+
+            alert(total);
+        }
+
+        function divide()
+        {
+            var number1 = document.getElementById('number1').value;
+            var number2 = document.getElementById('number2').value;
+            var total = parseInt(number1) / parseInt(number2);
+
+            alert(total);
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
