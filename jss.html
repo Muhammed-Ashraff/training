@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button type="button" id="btns" onclick="countLikes()">Like</button> -->
+    <!-- <form action="">
+        <input type="text" id="grade" name="grade" placeholder="enter your grade">
+        <button type="button" id="btns" onclick="checkGrade()">Submit</button>
+
+    </form> -->
+
+        <form action="">
+            <label for="">Select your name</label>
+            <select id="dropdown"></select>
+        </form>
+    
+
+
+
+    <script type="text/javascript">
+       // var number=0
+        //var slogan = "I will surely win";
+
+        //set the array 
+        var names = ["Mrs Oke","Mrs Ib","Mr Ola","Mr Adeitan","Mr Daniel","Mss Dolapo"]
+
+        //get the dropdown element
+        var dropdown = document.getElementById('dropdown');
+
+        //loop through the array and create a dropdown option
+        names.forEach(item => 
+        {
+            //create a new option element
+            var optionElement = document.createElement("option");
+
+            //set the value and the content of the option element
+            optionElement.value = item;
+            optionElement.textContent = item;
+
+            //append the optionElement to the dropdown
+            dropdown.appendChild(optionElement);
+        })
+        
+
+        function checkGrade(grade=50)
+        {
+            // var grade = document.getElementById('grade').value;
+
+            // if(grade >= 50)
+            // {
+            //     alert('Passed');
+            // }else
+            // {
+            //     alert('Failed');
+            // }
+
+            // number++
+            // if(number <=1)
+            // {
+            //     document.getElementById('btns').innerHTML = number + 'Like'
+            // }else
+            // {
+            //     document.getElementById('btns').innerHTML = number + 'Likes'
+
+            // }
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

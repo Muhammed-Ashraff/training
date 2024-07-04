@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    
+</body>
+</html>
+<script>
+    let promptShape = parseInt(
+        prompt("Enter any number (between 1 - 4) to select your favorite shape")
+    )
+
+    var output = "";
+    
+    switch (true)
+    {
+      case promptShape === 1:
+        output = "Circle";
+        break;
+
+      case promptShape === 2:
+        output = "Square";
+        break;
+        
+      case promptShape === 3:
+        output = "Triangle";
+        break;
+        
+      case promptShape === 4:
+        output = "Exit";
+        break;
+        
+      default:
+        output = " Pls try again";  
+
+
+    }
+    // let output = "Your numerical grade" + gradePrompt +'<br>';
+     output = "Your selected shape is" +'  ' + output;
+    document.getElementById("result").innerHTML = output;
+
+
+</script>
